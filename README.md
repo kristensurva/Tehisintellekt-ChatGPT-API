@@ -7,9 +7,9 @@
 `docker-compose up`
 4. Rakendus on saadaval aadressil: http://127.0.0.1:8000
 
-Testide käivitamiseks
-`cd tests`
-`pytest`
+Testide käivitamiseks:
+- `cd tests`
+- `pytest`
 
 **b. Rakenduse tööpõhimõte**
 Rakendus kasutab OpenAI GPT mudelit, et vastata küsimustele ettevõtte veebilehelt kogutud sisu põhjal. API-l on kaks endpointi:
