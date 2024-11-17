@@ -1,14 +1,13 @@
 # Tehisintellekt-ChatGPT-API
 ### **a. Kuidas rakendust käivitada**
-1. Docker peab olema paigaldatud.
-2. Ehitage Docker image<br>
+1. Veenduge, et [Docker](https://www.docker.com/products/docker-desktop/) on paigaldatud.
+2. Ehitage Docker image:<br>
 `docker-compose build`
-4. Looge `.env` fail näidise `.env.template` järgi, ning kleepige sinna API võti.
-5. Käivitage rakendus Docker Compose abil<br>
+3. Looge `.env` fail näidise `.env.template` järgi, ning kleepige sinna API võti.
+4. Käivitage rakendus Docker Compose abil:<br>
 `docker-compose up -d`
-6. Rakendus on saadaval aadressil: http://127.0.0.1:8000
-
-Testide käivitamiseks:<br>
+5. Rakendus on saadaval aadressil: http://127.0.0.1:8000
+6. Testide käivitamiseks:<br>
 `docker-compose exec fastapi_app pytest`
 
 ### **b. Rakenduse tööpõhimõte**
