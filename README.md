@@ -3,13 +3,13 @@
 1. Docker peab olema paigaldatud.
 2. Ehitage Docker image
 `docker-compose build`
-3. Käivitage rakendus Docker Compose abil
-`docker-compose up`
-4. Rakendus on saadaval aadressil: http://127.0.0.1:8000
+3. Looge `.env` fail näidise `.env.template` järgi, ning kleepige sinna API võti.
+4. Käivitage rakendus Docker Compose abil
+`docker-compose up -d`
+5. Rakendus on saadaval aadressil: http://127.0.0.1:8000
 
-Testide käivitamiseks:
-- `cd tests`
-- `pytest`
+Testide käivitamiseks
+`docker-compose exec fastapi_app pytest`
 
 **b. Rakenduse tööpõhimõte**
 Rakendus kasutab OpenAI GPT mudelit, et vastata küsimustele ettevõtte veebilehelt kogutud sisu põhjal. API-l on kaks endpointi:
