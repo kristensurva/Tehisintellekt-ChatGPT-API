@@ -24,7 +24,6 @@ def ask_chatgpt(question, pagesData):
             {"role": "user", "content": question}
         ],    
         model="gpt-4o-mini",
-        max_tokens=400,
         response_format=GPTAnswer
     )
     print(str(response))
