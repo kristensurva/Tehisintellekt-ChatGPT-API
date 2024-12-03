@@ -40,7 +40,7 @@ CI/CD pipeline tagab, et muudatused koodibaasis saavad automaatselt testitud, in
 4. **Deploymine:** Kasutada CD tööriistu nagu GitHub Actions, et deployda uusim Docker Image testkeskkonda lõplikuks kontrolliks. Pärast kinnitamist viia muudatused üle production keskkonda.
 
 ### **f. Kuidas püstitada rakendus Azure pilvekeskkonnas**
-Kuigi mul pole otsest kogemust Azure'iga, siis minu uurimise ja arusaamise põhjal, läheneksins sellele niimoodi:
+Kuigi mul pole otsest kogemust Azure'iga, siis minu uurimise ja arusaamise põhjal, läheneksin sellele niimoodi:
 1. Ressursigrupp ja konteineri register  
 - Luua ressursigrupp, et hallata kõiki vajalike ressursse (App Service, Container registry).
 - Luua Azure Container Registry, et üles laadida rakenduse Docker Image.
